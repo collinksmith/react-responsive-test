@@ -4,7 +4,7 @@
   "description": "test",
   "main": "index.js",
   "scripts": {
-    "clean": "npm cache cleanz && rm -rf node_modules",
+    "clean": "npm cache clean && rm -rf node_modules",
     "build": "browserify -t [ babelify --presets [ env react ] ] index.js -o build/index.js"
   },
   "author": "",
@@ -12,9 +12,10 @@
   "dependencies": {
     "babelify": "^8.0.0",
     "browserify": "^14.4.0",
-    "react": "^15.5.0",
-    "react-dom": "^15.5.0",
-    "react-responsive": "^4.0.0"
+    "prop-types": "^15.6.0",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-responsive": "^4.0.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
